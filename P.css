@@ -208,6 +208,23 @@ body {
 }
 
 @media (min-width: 992px) {
+
+    .header {
+        /* اجعل الـ padding متناسقاً ليعطي ارتفاعاً أكبر */
+        padding: 20px 0; 
+    }
+    
+    .header-content {
+        flex-direction: row;
+        gap: 12px; /* زيادة بسيطة في المسافة بين اللوجو والزر */
+        padding: 0 15px; /* إضافة مسافة جانبية لضمان عدم التصاق العناصر بالحواف */
+    }
+    
+    /* زيادة حجم الزر قليلاً ليناسب الهيدر الأطول */
+    .back-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -734,4 +751,6 @@ body {
         min-width: 180px; /* اختياري: عشان الزرار ميبقاش صغير أوي */
         transform: none !important; /* إلغاء أي ميلان أو إزاحة */
     }
+
+    
 }
